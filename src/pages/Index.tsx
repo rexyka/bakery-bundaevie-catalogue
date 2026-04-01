@@ -16,12 +16,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-primary">
+      <section className="relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/55 to-background" />
         <div className="relative bakery-container py-20 md:py-40 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -54,42 +54,43 @@ const Index = () => {
             </a>
           </motion.div>
         </div>
-        {/* Wave divider */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-            <path d="M0 80L60 68C120 56 240 32 360 24C480 16 600 24 720 36C840 48 960 64 1080 64C1200 64 1320 48 1380 40L1440 32V80H0Z" fill="hsl(39, 100%, 94%)" />
-          </svg>
-        </div>
       </section>
 
       {/* Featured Products */}
-      <section className="bakery-container py-16 md:py-24">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <div className="inline-flex items-center gap-2 mb-3">
-            <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-body font-semibold text-accent uppercase tracking-widest">
-              Our Bestsellers
-            </span>
-            <Sparkles className="w-4 h-4 text-accent" />
-          </div>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
-            Featured Products
-          </h2>
-          <p className="text-muted-foreground font-body mt-3 max-w-lg mx-auto">
-            Our most loved treats, handpicked for you. Choose your size and flavor!
-          </p>
-        </motion.div>
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Subtle patterned background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, hsl(352 59% 30%) 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
 
-        <div className="space-y-8">
-          {featuredProducts.map((product, index) => (
-            <FeaturedProductCard key={product.id} product={product} index={index} />
-          ))}
+        <div className="bakery-container relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-14"
+          >
+            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 mb-4">
+              <Sparkles className="w-4 h-4 text-accent" />
+              <span className="text-sm font-body font-semibold text-primary uppercase tracking-widest">
+                Our Bestsellers
+              </span>
+              <Sparkles className="w-4 h-4 text-accent" />
+            </div>
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground">
+              Featured Products
+            </h2>
+            <p className="text-muted-foreground font-body mt-3 max-w-lg mx-auto text-sm md:text-base">
+              Our most loved treats, handpicked for you. Choose your size and flavor, then order directly!
+            </p>
+            <div className="w-20 h-1 bg-accent rounded-full mx-auto mt-5" />
+          </motion.div>
+
+          <div className="space-y-10 md:space-y-14">
+            {featuredProducts.map((product, index) => (
+              <FeaturedProductCard key={product.id} product={product} index={index} />
+            ))}
+          </div>
         </div>
       </section>
 
