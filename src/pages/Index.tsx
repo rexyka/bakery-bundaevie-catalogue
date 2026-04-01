@@ -54,12 +54,6 @@ const Index = () => {
             </a>
           </motion.div>
         </div>
-        {/* Wave divider */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-            <path d="M0 80L60 68C120 56 240 32 360 24C480 16 600 24 720 36C840 48 960 64 1080 64C1200 64 1320 48 1380 40L1440 32V80H0Z" fill="hsl(39, 100%, 94%)" />
-          </svg>
-        </div>
       </section>
 
       {/* Featured Products */}
