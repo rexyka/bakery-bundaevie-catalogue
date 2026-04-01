@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         display: ["'Playfair Display'", "serif"],
         body: ["'Lato'", "sans-serif"],
-        heading: ["'Poppins'", "sans-serif"],
+        heading: ["'Montserrat'", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
