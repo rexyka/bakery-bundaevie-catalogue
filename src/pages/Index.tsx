@@ -47,7 +47,7 @@ const Index = () => {
               href="https://wa.me/?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order!"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-[#fff] font-body font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:shadow-hero hover:-translate-y-1"
+              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-[#fff] font-body font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-2xl text-base md:text-lg transition-all duration-300 hover:shadow-hero hover:-translate-y-1 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="w-5 h-5" />
               Order on WhatsApp
