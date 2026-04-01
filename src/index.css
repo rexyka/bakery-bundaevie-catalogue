@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -38,6 +38,7 @@
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
 
     --shadow-card: 0 4px 20px -4px hsl(352 59% 30% / 0.08);
     --shadow-card-hover: 0 12px 32px -8px hsl(352 59% 30% / 0.15);

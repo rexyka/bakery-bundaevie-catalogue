@@ -34,7 +34,7 @@ const Index = () => {
                 Artisan Bakery
               </span>
             </div>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 leading-tight">
+            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 leading-tight">
               Freshly Baked
               <br />
               <span className="text-accent">Happiness</span>
@@ -68,7 +68,7 @@ const Index = () => {
           <span className="text-sm font-body font-semibold text-accent uppercase tracking-widest">
             Our Bestsellers
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
             Featured Products
           </h2>
         </motion.div>
@@ -93,7 +93,7 @@ const Index = () => {
             <span className="text-sm font-body font-semibold text-accent uppercase tracking-widest">
               Explore More
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-2">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
               Our Catalogue
             </h2>
           </motion.div>
