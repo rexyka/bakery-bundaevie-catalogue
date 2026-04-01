@@ -34,7 +34,7 @@ const Index = () => {
                 Artisan Bakery
               </span>
             </div>
-            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 leading-tight">
+            <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
               Freshly Baked
               <br />
               <span className="text-accent">Happiness</span>
