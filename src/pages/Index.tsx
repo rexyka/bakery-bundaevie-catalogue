@@ -21,8 +21,8 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
-        <div className="relative bakery-container py-28 md:py-40 text-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/55 to-background" />
+        <div className="relative bakery-container py-20 md:py-40 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,12 +34,12 @@ const Index = () => {
                 Artisan Bakery
               </span>
             </div>
-            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 leading-tight">
+            <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
               Freshly Baked
               <br />
               <span className="text-accent">Happiness</span>
             </h1>
-            <p className="font-body text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="font-body text-base md:text-xl text-white/85 max-w-2xl mx-auto mb-8 leading-relaxed">
               Handcrafted pastries and desserts made with love, premium ingredients,
               and generations of baking tradition.
             </p>
@@ -47,7 +47,7 @@ const Index = () => {
               href="https://wa.me/?text=Hi%2C%20I%20would%20like%20to%20place%20an%20order!"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-[#fff] font-body font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:shadow-hero hover:-translate-y-1"
+              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-[#fff] font-body font-bold py-3.5 px-6 md:py-4 md:px-8 rounded-2xl text-base md:text-lg transition-all duration-300 hover:shadow-hero hover:-translate-y-1 w-full sm:w-auto justify-center"
             >
               <MessageCircle className="w-5 h-5" />
               Order on WhatsApp
