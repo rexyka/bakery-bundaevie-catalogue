@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MessageCircle, ChefHat, Sparkles, Star } from "lucide-react";
 import FeaturedProductCard from "@/components/FeaturedProductCard";
 import ProductCard from "@/components/ProductCard";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { featuredProducts, catalogueProducts, categories } from "@/data/products";
 
 const featuredHighlights = [
